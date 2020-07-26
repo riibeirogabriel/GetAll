@@ -41,15 +41,16 @@
 
       <div class="profile">
         <img src="img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="home-c.html">Alex Smith</a></h1>
+        <h1 class="text-light"><a href="{% url 'home-c' %}">Alex Smith</a></h1>
       </div>
 
       <nav class="nav-menu">
         <ul>
-          <li><a href="home-c.html"><span>Home</span></a></li>
-          <li><a href="despesas.html"><span>Despesas</span></a></li>
-          <li><a href="metas.html"><span>Metas</span></a></li>
-          <li><a href="faq.html"><span>Dúvidas frequentes</span></a></li>
+          <li><a href="{% url 'home-c' %}"> <span>Home</span></a></li>
+          <li><a href="{% url 'despesas' %}"> <span>Despesas</span></a></li>
+          <li><a href="{% url 'metas' %}"> <span>Metas</span></a></li>
+          <li><a href="{% url 'faq' %}"> <span>Dúvidas frequentes</span></a></li>
+
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -61,8 +62,8 @@
       <div class="container">
 
         <div class="row" id="section-conta">
-          <div class="col-xs-6" id="conta-corrente" > <a href="home-c.html"> Conta corrente</a></div>
-          <div class="col-xs-6" id="conta-poupanca" ><a href="home-p.html">Poupança</a></div>
+          <div class="col-xs-6" id="conta-corrente" > <a href="{% url 'home-c' %}"> Conta corrente</a></div>
+          <div class="col-xs-6" id="conta-poupanca" ><a href="{% url 'home-p' %}">Poupança</a></div>
         </div>
 
         <div class="section-cartoes">

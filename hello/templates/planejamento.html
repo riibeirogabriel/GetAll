@@ -41,15 +41,15 @@
 
       <div class="profile">
         <img src="img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="home-c.html">Alex Smith</a></h1>
+        <h1 class="text-light"><a href="{% url 'home-c' %}">Alex Smith</a></h1>
       </div>
 
       <nav class="nav-menu">
         <ul>
-          <li><a href="home-c.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="despesas.html"><i class="bx bx-despesas"></i> <span>Despesas</span></a></li>
-          <li><a href="metas.html"><i class="bx bx-metas"></i> <span>Metas</span></a></li>
-          <li><a href="faq.html"><i class="bx bx-faq"></i> <span>Dúvidas frequentes</span></a></li>
+          <li><a href="{% url 'home-c' %}"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="{% url 'despesas' %}"><i class="bx bx-despesas"></i> <span>Despesas</span></a></li>
+          <li><a href="{% url 'metas' %}"><i class="bx bx-metas"></i> <span>Metas</span></a></li>
+          <li><a href="{% url 'faq' %}"><i class="bx bx-faq"></i> <span>Dúvidas frequentes</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -61,7 +61,7 @@
       <div class="container">
 
         <div class="row" id="section-title">
-          <div class="col-xs-4" id="icon-back" > <a href="home-c.html">icon</a></div>
+          <div class="col-xs-4" id="icon-back" > <a href="{% url 'home-c' %}">icon</a></div>
           <div class="col-xs-4" id="title" >Qual é o seu principal objetivo financeiro?</div>
         </div>
         <div>
@@ -72,7 +72,7 @@
 
         </div>
         <div id="icon-back">
-            <a href="home-c.html">icon</a>
+            <a href="{% url 'home-c' %}">icon</a>
         </div>
 
         
