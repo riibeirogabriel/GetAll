@@ -7,12 +7,21 @@ body, html{
 
 body {font-family: Arial, Helvetica, sans-serif;}
 
-#login-nome{
-    padding: 50px;
-    text-align: center;
+h3{
+  color: rgba(0, 0, 0, 0.5);
 }
+
+
+#login img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+}
+
 form {
     background-color: #FFFFFF;
+    border-radius: 25px;
 }
 
 input[type=text], input[type=password] {
@@ -49,6 +58,33 @@ button {
 .container {
   padding: 20px;
   text-align: center;
+  /* display: flex; */
+       
+       justify-content: center;
+        align-items: center
+}
+#entrar{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+}
+
+#title-entrar{
+  display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-right: auto;
+      padding-right: 30px;
+
+}
+
+#arrow-right-icon{
+  /* text-align: center; */
+  /* padding-right: 30px; */
+  float: left;
+  margin-right: auto;
 }
 
 span.psw {
