@@ -40,16 +40,17 @@
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="{% url 'home-c' %}">Alex Smith</a></h1>
+        <img src="../static/img/perfil.png" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-profile"><a href="{% url 'home-c' %}"></a>Amanda Wolf</a></h1>
       </div>
 
       <nav class="nav-menu">
         <ul>
-          <li><a href="{% url 'home-c' %}"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="{% url 'despesas' %}"><i class="bx bx-despesas"></i> <span>Despesas</span></a></li>
-          <li><a href="{% url 'metas' %}"><i class="bx bx-metas"></i> <span>Metas</span></a></li>
-          <li><a href="{% url 'faq' %}"><i class="bx bx-faq"></i> <span>Dúvidas frequentes</span></a></li>
+          <li><a href="{% url 'home-c' %}"> <span>Home</span></a></li>
+          <li><a href="{% url 'despesas' %}"> <span>Despesas</span></a></li>
+          <li><a href="{% url 'metas' %}"> <span>Metas</span></a></li>
+          <li><a href="{% url 'faq' %}"> <span>Dúvidas frequentes</span></a></li>
+
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -60,29 +61,101 @@
   <section id="metas" class="metas">
       <div class="container">
 
-        <div class="row" id="section-title">
-          <div class="col-xs-4" id="icon-back" > <a href="{% url 'home-c' %}">icon</a></div>
-          <div class="col-xs-4" id="title" >Despesas</div>
+        <div class="row" id="plan">
+          <div id="arrow-right-icon">
+            <a href="{% url 'home-c' %}"><img src="../static/img/arrow-left-w.png " alt="arrow-left"></a>
+          </div>
+          <div id="title">
+              <h3>Despesas</h3>
+          </div>
         </div>
-        <div id="pagamento-button">
-            <a href="{% url 'pagamento' %}"><button >Novo pagamento</button></a>
-        </div>
-        <div class="row" id="mes">
-            <div class="col-xs-4" id="mes" >Julho</div>
-            <div class="col-xs-4" id="icon" >icon</div>
-        </div>
-        <div class="row" id="despesa1">
-            
-            <div id="valor">
 
-            </div>
-        </div>
-        <div>
+        <div id="plan-button">
+          <a href="{% url 'pagamento' %}"><button >Novo pagamento</button></a>
+      </div>
 
+
+      <div id="title" style="font-size: 15px; padding-top: 15px;">
+        <h3>julho</h3>
+      </div>
+      <div class="row" id="gastos">
+        <div id="icon">
+          <img src="../static/img/cel.png" alt="educ">
         </div>
-        <div id="icon-back">
-            <a href="{% url 'home-c' %}">icon</a>
+        <div id="subject">
+          <div id="prin">
+            <p>Recarga celular</p>
+          </div>
+          <div>
+            <p>Farmácia vida boa</p>
+          </div>
         </div>
+        <div >
+          <div id="valor">
+            <p>R$ 15,00</p>
+          </div>
+          <div id="data">
+            <p>25, Jul</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" id="gastos">
+        <div id="icon">
+          <img src="../static/img/cel.png" alt="educ">
+        </div>
+        <div id="subject">
+          <div id="prin">
+            <p>Recarga celular</p>
+          </div>
+          <div>
+            <p>Farmácia vida boa</p>
+          </div>
+        </div>
+        <div >
+          <div id="valor">
+            <p>R$ 15,00</p>
+          </div>
+          <div id="data">
+            <p>25, Jul</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row" id="gastos">
+        <div id="icon">
+          <img src="../static/img/food.png" alt="educ">
+        </div>
+        <div id="subject">
+          <div id="prin">
+            <p>Alimentação</p>
+          </div>
+          <div>
+            <p>iFood</p>
+          </div>
+        </div>
+        <div >
+          <div id="valor">
+            <p>R$ 52,90</p>
+          </div>
+          <div id="data">
+            <p>23, Jul</p>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="gastos">
+        
+          <div id="prin">
+            <p>Valor total: </p>
+          </div>
+          
+          <div id="valortotal">
+            <p> R$ 52,90</p>
+          </div>
+          
+        </div>
+      </div>
+      <div>
 
         
       </div>

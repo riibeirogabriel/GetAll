@@ -40,57 +40,155 @@
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="{% url 'home-c' %}">Alex Smith</a></h1>
+        <img src="../static/img/perfil.png" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-profile"><a href="{% url 'home-c' %}"></a>Amanda Wolf</a></h1>
       </div>
 
       <nav class="nav-menu">
         <ul>
-          <li><a href="{% url 'home-c' %}"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="{% url 'despesas' %}"><i class="bx bx-despesas"></i> <span>Despesas</span></a></li>
-          <li><a href="{% url 'metas' %}"><i class="bx bx-metas"></i> <span>Metas</span></a></li>
-          <li><a href="{% url 'faq' %}"><i class="bx bx-faq"></i> <span>Dúvidas frequentes</span></a></li>
+          <li><a href="{% url 'home-c' %}"> <span>Home</span></a></li>
+          <li><a href="{% url 'despesas' %}"> <span>Despesas</span></a></li>
+          <li><a href="{% url 'metas' %}"> <span>Metas</span></a></li>
+          <li><a href="{% url 'faq' %}"> <span>Dúvidas frequentes</span></a></li>
+
         </ul>
       </nav><!-- .nav-menu -->
 
     </div>
   </header><!-- End Header -->
 
+
   <main id="main">
   <section id="metas" class="metas">
       <div class="container">
+        <div class="row" id="conta">
+          <div id="arrow-right-icon">
+            <a href="{% url 'home-c' %}"><img src="../static/img/arrow-left-w.png " alt="arrow-left"></a>
+          </div>
+          <div id="title">
+              <h3>Conta corrente</h3>
+          </div>
 
-        <div class="row" id="section-title">
-          <div class="col-xs-4" id="icon-back" > <a href="{% url 'home-c' %}">icon</a></div>
-          <div class="col-xs-4" id="title" >Despesas</div>
-        </div>
-        <div id="pagamento-button">
-            <a href="{% url 'pagamento' %}"><button >Conta corrente</button></a>
         </div>
         <div id="cartoes">
             <div>
                 <h3>Meus cartões</h3>
             </div>
+            <div>
+              <p>2 cartões físicos, 1 cartão digital</p>
+          </div>
+          <div class="row" id="cartoes-tipo">
+            <div class="col-xs-6" id="cartoes-fisicos" >Cartões físicos</div>
+            <div class="col-xs-6" id="cartoes-digitais" >Cartões digitais</div>
+          </div>
             <div id="img-cartoes">
-                
+              <img src="../static/img/cartao.png" alt="">      
             </div>
-        </div>
-        <div>
-            <h3>Transações recentes</h3>
-        </div>
-        <div>
+            <div>
+              <h3>Transações recentes</h3>
+            </div>
+          <div class="row" id="transacoes">
+            <div id="tran">
+              <p>todas</p>
+            </div>
+            <div id="tran">
+              <p>cartão 1</p>
+            </div>
+            <div id="tran">
+              <p>cartão 2</p>
+            </div>
+          </div>
+          <div>
             <h3>Ontem</h3>
-        </div>
-        <div>
-            <h3>Semana passada </h3>
-        </div>
-        <div>
+          </div>
+          <div class="row" id="gastos">
+            <div id="icon">
+              <img src="../static/img/educ.png" alt="educ">
+            </div>
+            <div id="subject">
+              <div id="prin">
+                <p>Educação</p>
+              </div>
+              <div>
+                <p>Livraria do bem</p>
+              </div>
+            </div>
+            <div id="valor">
+              <p>- R$ 39,90</p>
+            </div>
+          </div>
+          <div>
+            <h3>Semana Passada</h3>
+          </div>
+          <div class="row" id="gastos">
+            <div id="icon">
+              <img src="../static/img/cel.png" alt="educ">
+            </div>
+            <div id="subject">
+              <div id="prin">
+                <p>Recarga celular</p>
+              </div>
+              <div>
+                <p>Farmácia vida boa</p>
+              </div>
+            </div>
+            <div >
+              <div id="valor">
+                <p>- R$ 15,00</p>
+              </div>
+              <div id="data">
+                <p>25, Jul</p>
+              </div>
+            </div>
+          </div>
+          <div class="row" id="gastos">
+            <div id="icon">
+              <img src="../static/img/food.png" alt="educ">
+            </div>
+            <div id="subject">
+              <div id="prin">
+                <p>Alimentação</p>
+              </div>
+              <div>
+                <p>iFood</p>
+              </div>
+            </div>
+            <div >
+              <div id="valor">
+                <p>- R$ 52,90</p>
+              </div>
+              <div id="data">
+                <p>23, Jul</p>
+              </div>
+            </div>
+          </div>
+          <div>
             <h3>Mês passado</h3>
+          </div>
+          <div class="row" id="gastos">
+            <div id="icon">
+              <img src="../static/img/trans.png" alt="educ">
+            </div>
+            <div id="subject">
+              <div id="prin">
+                <p>Tranferência</p>
+              </div>
+              <div>
+                <p>João Neto da Silva </p>
+              </div>
+            </div>
+            <div >
+              <div id="valor-p">
+                <p>+ R$ 300,00</p>
+              </div>
+              <div id="data">
+                <p>30, Jun</p>
+              </div>
+            </div>
+          </div>
         </div>
         
-        <div id="icon-back">
-            <a href="{% url 'home-c' %}">icon</a>
-      </div>
+        
     </section><!-- End About Section -->
 
   

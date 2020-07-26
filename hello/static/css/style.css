@@ -300,6 +300,230 @@ font-size: 17px;
   padding: 0px 7px;
 }
 
+#gastos{
+  background-color: #fff;
+  border-radius: 25px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+#title-p h3 {
+  justify-content: center;
+  padding-top: 20px;
+ 
+  justify-content: center;
+  align-items: center;
+ 
+  padding-right: 30px;
+  color: #fff;
+  font-size: 20px;
+  
+}
+
+#plano img{
+  max-width: 240px;
+}
+
+/* conta corrente */
+
+.container {
+  padding: 20px;
+  text-align: center;
+  /* display: flex; */
+
+       
+       justify-content: center;
+        align-items: center
+}
+#conta{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+}
+
+#title{
+  display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-right: auto;
+      /* margin-left: auto; */
+      padding-right: 30px;
+      color: #fff;
+      font-size: 20px;
+
+}
+
+#arrow-right-icon{
+  
+  float: left;
+  margin-right: auto;
+}
+
+#cartoes h3{
+
+  color: #fff;
+  padding: 15px 0px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; 
+  font-size: 18px;
+
+}
+
+#cartoes p{
+
+  color: #fff;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; 
+  font-size: 15px;
+
+}
+
+#cartoes-tipo{
+  background-color: #fff;
+  border-radius: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+}
+#cartoes-fisicos{
+  padding: 0px 20px 0px 20px;
+ 
+}
+
+
+#conta-corrente, #conta-poupanca, #cartoes-fisicos, #cartoes-digitais{
+  color: #6373E1;
+}
+
+#transacoes{
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; 
+}
+
+#tran{
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 5px;
+  margin: 0 10px;
+  width: 77px;
+height: 35px;
+
+}
+#tran p{
+  color: #6373E1;
+  font-weight: bold;
+}
+
+#gastos{
+  background-color: #fff;
+  border-radius: 25px;
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-right: 10px;
+  padding: 10px;
+ 
+  display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; 
+
+}
+#subject p{
+  color: #6373E1 ;
+  margin: 0px;
+}
+#prin p {
+  font-weight: bold;
+}
+
+#subject{
+  padding: 15px;
+}
+#valor p {
+  color: #ED0000;
+  font-weight: bold;
+}
+#valor-p p {
+  color: #11C818;
+  font-weight: bold;
+}
+#data p{
+  color: #6373E1 ;
+  margin: 0px;
+}
+
+/* plan mensal */
+
+
+#plan{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#title h3{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  padding-right: 30px;
+  color: #fff;
+  font-size: 20px;
+
+}
+
+#arrow-right-icon{
+
+float: left;
+margin-right: auto;
+}
+
+
+#plan-button button {
+  width: 250px;
+  height: 50px;
+  background: #fff; 
+  padding: 10px 10px;  
+  margin-top: 20px;
+  color: #6373E1; 
+  border-radius: 25px;
+  border: none;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#plan-cas {
+  color: #6373E1;
+  font-weight: bold;
+}
+
+
+
+#valortotal p {
+  font-weight: bold;
+  padding: 0px 15px;
+}
 
 /*--------------------------------------------------------------
 # Navigation Menu
