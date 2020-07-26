@@ -19,9 +19,9 @@ h1 {
     
 }
 #inicial-button button {
-    background: #6373E1; 
+    background: #fff; 
     padding: 15px; cursor: pointer; 
-    color: #fff; 
+    color: #6373E1; 
     border-radius: 25px;
     border: none;
     font-size: 25px;

@@ -1,9 +1,3 @@
-/**
-* Template Name: iPortfolio - v1.3.0
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
@@ -69,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #6373E1;
+  background: rgba(255, 255, 255);
   overflow-y: auto;
 }
 
@@ -95,26 +89,9 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
-#header .profile .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #212431;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-}
 
-#header .profile .social-links a:hover {
-  background: #149ddd;
-  color: #fff;
-  text-decoration: none;
-}
+
+
 
 #main {
   margin-left: 300px;
@@ -167,11 +144,13 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a {
   display: flex;
   align-items: center;
-  color: #fff;
+  color: #6373E1;
   padding: 12px 15px;
   margin-bottom: 8px;
   transition: 0.3s;
-  font-size: 15px;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+
 }
 
 .nav-menu a i {
