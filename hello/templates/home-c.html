@@ -40,8 +40,8 @@
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="{% url 'home-c' %}">Alex Smith</a></h1>
+        <img src="../static/img/perfil.png" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-profile"><a href="{% url 'home-c' %}"></a>Amanda Wolf</a></h1>
       </div>
 
       <nav class="nav-menu">
@@ -68,61 +68,82 @@
 
         <div class="section-cartoes">
           <div id="icons-cart" >
+            <img src="../static/img/cart1.png" alt="cartao">
 
+            <img src="../static/img/cart2.png" alt="cartao">
+            
+            <img src="../static/img/cart3.png" alt="cartao"> 
+          </div>
+          <div id="legend-cart">
+            <div><p>cartão1</p></div>
+            <div><p>cartão1</p></div>
+            <div><p>cartão1</p></div>
           </div>
           <div id="saldo" >
             <p>saldo total</p>
-
           </div>
           <div>
-            <div id="saldo-money">
-
+          <div id="saldo-money">
+            <div>
+              <h3>R$ 3.689,75</h3>
             </div>
+            <div>
+              <img src="../static/img/arrow-right.png" alt="arrow-right">
+            </div>
+          </div>
             <div id="cont-corr">
-
             </div>
           </div>  
         </div>
-        <div>
+        <div id="title-p">
           <p>Minhas finanças</p>
         </div>
-        <div class="row" id="section-consumo">
-          <div id="planejamento" class="col-xs-6">
-            <h3>PERFIL DE CONSUMO</h3>
-          </div>  
-          <div id="icon-plan" class="col-xs-6">
-
-          </div>
-
-        </div>
-        <div class="row" id="section-plaejamento">
-            <div id="planejamento" class="col-xs-6">
-              <h3>PLANEJAMENTO MENSAL</h3>
-            </div>  
-            <div id="icon-plan" class="col-xs-6">
-
+        <div class="section-consumo" ">
+          <div id="planejamento" >
+            <div>
+              <h3>PERFIL DE CONSUMO</h3>
             </div>
+            <div>
+              <img src="../static/img/arrow-right.png" alt="arrow-right">
+            </div>
+          </div>  
+          <div id="icon-plan" >
+            <img src="../static/img/plan.png" alt="plan">
+          </div>
+        </div>
+        <div class="section-planejamento">
+            <div id="planejamento" >
+              <div>
+                <h3>PLANEJAMENTO MENSAL</h3>
+              </div>
+              <div>
+                <img src="../static/img/arrow-right.png" alt="arrow-right">
+              </div>
+            </div>  
             
             <div id="status">
               <p> Status: dentro do planejamento
                 em todas as categorias.</p>
 
             </div>
-            <div id="controle" class="row">
-              <div class="col-xs-4" id="renda">
-
+              <div id="icons-plan" >
+                <img src="../static/img/rend.png" alt="plan">
+    
+                <img src="../static/img/gast.png" alt="plan">
+                
+                <img src="../static/img/cashinvest.png" alt="plan"> 
               </div>
-              <div class="col-xs-4" id="gasto">
-
+              <div id="legend-plan">
+                <div><p>R$ 5.459,00</p></div>
+                <div><p>R$ 3.109,02</p></div>
+                <div><p>R$ 300,00</p></div>
               </div>
-              <div class="col-xs-4" id="cashinvest  ">
 
-              </div>
               <div id="atualizacao">
                 <p>A última movimentação foi em 25/07 às 15h32</p>
               </div>
 
-            </div>
+            
         </div>
 
       </div>

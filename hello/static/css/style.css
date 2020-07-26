@@ -8,7 +8,7 @@ body {
 }
 
 a {
-  color: #149ddd;
+  color: #4A3D3D;
 }
 
 a:hover {
@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50px;
   right: 15px;
   bottom: 15px;
-  background: #149ddd;
+  background: #4A3D3D;
   color: #fff;
   transition: display 0.5s ease-in-out;
   z-index: 99999;
@@ -71,11 +71,13 @@ h1, h2, h3, h4, h5, h6 {
   margin: 15px auto;
   display: block;
   width: 120px;
+  height: 120px;
   border: 8px solid #3D36AF;
 }
 
 #header .profile h1 {
   font-size: 24px;
+  color: #6373E1  ;
   margin: 0;
   padding: 0;
   font-weight: 600;
@@ -85,7 +87,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .profile h1 a, #header .profile h1 a:hover {
-  color: #fff;
+  color: #3D36AF;
   text-decoration: none;
 }
 
@@ -118,10 +120,187 @@ h1, h2, h3, h4, h5, h6 {
 #section-conta{
   background-color: #fff;
   border-radius: 25px;
+  margin-left: 40px;
+  margin-right: 40px;
+  display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+}
+
+/* section cartoes */
+
+
+
+.section-cartoes{
+  background-color: #fff;
+  border-radius: 25px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding: 10px;
+  /* display: flex; */
+      
+      justify-content: center;
+      align-items: center;
+}
+.section-cartoes p{
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#icons-cart{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+    
+}
+
+#legend-cart{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;   
+}
+
+#icons-cart img{
+  padding: 3px 15px 3px 15px;
+}
+
+#legend-cart p{
+  padding: 0px 15px 0px 15px;
+  color: #6373E1;
+}
+
+#saldo{
+ 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;  
+
+}
+
+#saldo p{
+  color: rgba(0, 0, 0, 0.6)  ;
+  font-weight: bold;
+}
+
+#saldo-money{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; 
+}
+#saldo-money h3{
+  font-size: 20px;
+  padding-right: 100px;
 }
 #conta-corrente{
   padding: 0px 20px 0px 20px;
 }
+
+#title-p p {
+  color: #fff;
+  padding: 15px 0px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; 
+  
+
+}
+
+/* section consumo*/
+
+.section-consumo{
+  background-color: #fff;
+  border-radius: 25px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding: 10px;     
+  justify-content: center;
+  align-items: center;
+}
+
+#planejamento h3{
+  color: #6373E1;
+  font-weight: 500;
+font-size: 17px;
+  padding-right: 15px;
+}
+
+#planejamento{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; 
+
+}
+
+#icon-plan img{
+  max-width: 250px;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* planejamento mensal */
+
+.section-planejamento{
+  background-color: #fff;
+  border-radius: 25px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+#status{
+  color: #484141;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;  
+}
+
+#atualizacao{
+  color: #484141;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;  
+}
+
+#icons-plan{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+    
+}
+
+#legend-plan{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;   
+}
+
+#legend-plan p{
+  color: #4A3D3D;
+  font-weight: bold;
+  padding: 0px 7px;
+}
+
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -241,7 +420,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #149ddd;
+  border-bottom: 3px solid #4A3D3D;
 }
 
 @media (min-width: 1024px) {
@@ -293,7 +472,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #149ddd;
+  background: #4A3D3D;
   bottom: 0;
   left: 0;
 }
@@ -323,7 +502,7 @@ section {
 .about .content ul i {
   font-size: 20px;
   padding-right: 2px;
-  color: #149ddd;
+  color: #4A3D3D;
 }
 
 .about .content p:last-child {
@@ -345,7 +524,7 @@ section {
 .facts .count-box i {
   display: block;
   font-size: 44px;
-  color: #149ddd;
+  color: #4A3D3D;
   float: left;
 }
 
@@ -370,14 +549,14 @@ section {
   font-weight: 600;
   display: block;
   margin-top: 20px;
-  color: #122f57;
+  color: #6373E1;
   font-size: 15px;
   font-family: "Poppins", sans-serif;
   transition: ease-in-out 0.3s;
 }
 
 .facts .count-box a:hover {
-  color: #1f5297;
+  color: #122f57;
 }
 
 /*--------------------------------------------------------------
@@ -412,7 +591,7 @@ section {
   width: 1px;
   height: 10px;
   transition: .9s;
-  background-color: #149ddd;
+  background-color: #4A3D3D;
 }
 
 /*--------------------------------------------------------------
@@ -507,7 +686,7 @@ section {
 }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: #149ddd;
+  color: #4A3D3D;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -590,10 +769,10 @@ section {
   justify-content: center;
   width: 54px;
   height: 54px;
-  background: #149ddd;
+  background: #4A3D3D;
   border-radius: 50%;
   transition: 0.5s;
-  border: 1px solid #149ddd;
+  border: 1px solid #4A3D3D;
 }
 
 .services .icon i {
@@ -606,7 +785,7 @@ section {
 }
 
 .services .icon-box:hover .icon i {
-  color: #149ddd;
+  color: #4A3D3D;
 }
 
 .services .title {
@@ -621,7 +800,7 @@ section {
 }
 
 .services .title a:hover {
-  color: #149ddd;
+  color: #4A3D3D;
 }
 
 .services .description {
@@ -714,7 +893,7 @@ section {
 }
 
 .testimonials .owl-dot.active {
-  background-color: #149ddd !important;
+  background-color: #4A3D3D !important;
 }
 
 @media (max-width: 767px) {
@@ -739,7 +918,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #149ddd;
+  color: #4A3D3D;
   float: left;
   width: 44px;
   height: 44px;
@@ -790,12 +969,12 @@ section {
 }
 
 .contact .info .social-links a:hover {
-  background: #149ddd;
+  background: #4A3D3D;
   color: #fff;
 }
 
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #149ddd;
+  background: #4A3D3D;
   color: #fff;
 }
 
@@ -875,7 +1054,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #149ddd;
+  background: #4A3D3D;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -981,7 +1160,7 @@ section {
 }
 
 .portfolio-details .portfolio-details-carousel .owl-dot.active {
-  background-color: #149ddd !important;
+  background-color: #4A3D3D !important;
 }
 
 .portfolio-details .portfolio-info {
