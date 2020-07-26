@@ -3,6 +3,8 @@ import os
 from django.conf import settings
 
 class TecbanRequests():
+    balance_accounts_result = []
+    accounts_extract_result = []
     def __init__(self):
         TRANSPORT_CERT_KEY = os.path.join(settings.BASE_DIR, "client_private_key.key")
         TRANSPORT_CERT = os.path.join(settings.BASE_DIR, "client_certificate.crt")
@@ -34,6 +36,8 @@ class TecbanRequests():
         return transactions
     
     def balance_accounts(self):
+        if(self.balance_accounts_result):
+            return self.balance_accounts_result
         headers = {
             "x-fapi-financial-id":"c3c937c4-ab71-427f-9b59-4099b7c680ab",
             "x-fapi-interaction-id": "26b7b58f-b3e8-4dfb-8689-60f2e2edd4c6",
@@ -54,9 +58,12 @@ class TecbanRequests():
                     "amount": transaction["Amount"]["Amount"]
                 }
             )
+        self.balance_accounts_result = transactions.copy()
         return transactions
     
     def account_extract(self):
+        if(self.accounts_extract_result):
+            return self.accounts_extract_result
         headers = {
             "x-fapi-financial-id":"c3c937c4-ab71-427f-9b59-4099b7c680ab",
             "x-fapi-interaction-id": "5558869e-fd1d-42f5-a6f7-5fa93719ece8",
@@ -82,4 +89,6 @@ class TecbanRequests():
                     "date": transaction["ValueDateTime"]
                 }
             )
+        
+        self.account_extract_result = transactions
         return transactions

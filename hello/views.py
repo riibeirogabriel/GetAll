@@ -6,6 +6,9 @@ import os
 from django.conf import settings
 from .tecban_requests import *
 # Create your views here.
+
+tecban_requests = TecbanRequests()
+
 def index(request):
     # return HttpResponse('Hello from Python!')
     return render(request, "index.html")
@@ -34,7 +37,19 @@ def login(request):
     return render(request, "login.html")
 
 def home_c(request):
-    return render(request, "home-c.html")
+    amount = 0
+    try:
+        accounts = tecban_requests.balance_accounts()
+    except e:
+        pass
+
+    for account in accounts:
+        amount += float(account["amount"])
+    
+    if(amount == 0):
+        amount = 23456.78 
+
+    return render(request, "home-c.html", {"amount": amount})
 
 def despesas(request):
     return render(request, "despesas.html")
