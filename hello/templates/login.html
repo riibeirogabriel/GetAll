@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>teste</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+    
+    <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/style-login.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="login">
+      <div id="login-nome">
+         <h1>Nome</h1>
+      </div>
+      <div id="login-form">
+        <!-- <form action="home-c.html" method="post"> -->
+            <form action="{% url 'home-c' %}" method="_blank">
+
+
+            <div class="container">
+
+                <div>
+              
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+                </div>
+                <div>
+              
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                </div>
+                <div>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+                <div id="login-button">
+                 <button type="submit">login</button>
+                </div>
+              
+            </div>
+          
+          </form>
+
+
+      </div>
+      
+  </div>
+   
+  </body>
+</html>

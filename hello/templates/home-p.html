@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Home</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../static/img/favicon.png" rel="icon">
+  <link href="../static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../static/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="../static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../static/vendor/venobox/venobox.css" rel="stylesheet">
+  <!-- <link href="../static/vendor/owl.carousel/../static/owl.carousel.min.css" rel="stylesheet"> -->
+  <link href="../static/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../static/css/style.css" rel="stylesheet">
+
+ 
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+
+   <!-- ======= Header ======= -->
+   <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="{% url 'home-c' %}">Alex Smith</a></h1>
+      </div>
+
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="{% url 'home-c' %}"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="{% url 'despesas' %}"><i class="bx bx-despesas"></i> <span>Despesas</span></a></li>
+          <li><a href="{% url 'metas' %}"><i class="bx bx-metas"></i> <span>Metas</span></a></li>
+          <li><a href="{% url 'faq' %}"><i class="bx bx-faq"></i> <span>Dúvidas frequentes</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+  <section id="home-c" class="home-c">
+      <div class="container">
+
+        <div class="row" id="section-conta">
+          <div class="col-xs-6" id="conta-corrente" > <a href="{% url 'home-c' %}"> Conta corrente</a></div>
+          <div class="col-xs-6" id="conta-poupanca" ><a href="{% url 'home-p' %}">Poupança</a></div>
+        </div>
+
+        <div class="section-cartoes">
+          <div id="icons-cart" >
+
+          </div>
+          <div id="saldo" >
+            <p>saldo totall</p>
+
+          </div>
+          <div>
+            <div id="saldo-money">
+
+            </div>
+            <div id="cont-corr">
+
+            </div>
+          </div>  
+        </div>
+        <div>
+          <p>Minhas finanças</p>
+        </div>
+        <div class="row" id="section-consumo">
+          <div id="planejamento" class="col-xs-6">
+            <h3>PERFIL DE CONSUMO</h3>
+          </div>  
+          <div id="icon-plan" class="col-xs-6">
+
+          </div>
+
+        </div>
+        <div class="row" id="section-plaejamento">
+            <div id="planejamento" class="col-xs-6">
+              <h3>PLANEJAMENTO MENSAL</h3>
+            </div>  
+            <div id="icon-plan" class="col-xs-6">
+
+            </div>
+            
+            <div id="status">
+              <p> Status: dentro do planejamento
+                em todas as categorias.</p>
+
+            </div>
+            <div id="controle" class="row">
+              <div class="col-xs-4" id="renda">
+
+              </div>
+              <div class="col-xs-4" id="gasto">
+
+              </div>
+              <div class="col-xs-4" id="cashinvest  ">
+
+              </div>
+              <div id="atualizacao">
+                <p>A última movimentação foi em 25/07 às 15h32</p>
+              </div>
+
+            </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+  
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../static/vendor/jquery/jquery.min.js"></script>
+  <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../static/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="../static/vendor/php-email-form/validate.js"></script>
+  <script src="../static/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="../static/vendor/counterup/counterup.min.js"></script>
+  <script src="../static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../static/vendor/venobox/venobox.min.js"></script>
+  <script src="../static/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="../static/vendor/typed.js/typed.min.js"></script>
+  <script src="../static/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../static/js/main.js"></script>
+
+</body>
+
+</html>
