@@ -25,3 +25,47 @@ def accounts(request):
 
 
     return render(request, str(tecban_requests.consentiment_accounts()))
+
+def slides(request):
+    return render(request, 'slides.html')
+
+
+def login(request):
+    return render(request, "login.html")
+
+def home_c(request):
+    return render(request, "home-c.html")
+
+def despesas(request):
+    return render(request, "despesas.html")
+
+def metas(request):
+    return render(request, "metas.html")
+
+def faq(request):
+    return render(request, "faq.html")
+
+def home_p(request):
+    return render(request, "home-p.html")
+
+def conta_corrente(request):
+    return render(request, "conta-corrente.html")
+
+def inner_page(request):
+    return render(request, "inner-page.html")
+
+def plan_mensal(request):
+    return render(request, "plan-mensal.html")
+
+def planejamento(request):
+    return render(request, "planejamento.html")
+
+def portfolio_details(request):
+    return render(request, "portfolio-details.html")
+
+def pagamento(request):
+    return render(request, "pagamento.html")
+
+def cash_invest(request):
+    return render(request, "cash-invest.html")
+
