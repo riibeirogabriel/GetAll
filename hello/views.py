@@ -7,7 +7,6 @@ from django.conf import settings
 from .tecban_requests import *
 # Create your views here.
 
-tecban_requests = TecbanRequests()
 
 def index(request):
     # return HttpResponse('Hello from Python!')
@@ -27,7 +26,7 @@ def accounts(request):
     tecban_requests = TecbanRequests()
 
 
-    return render(request, str(tecban_requests.consentiment_accounts()))
+    return render(request, str("oi"))
 
 def slides(request):
     return render(request, 'slides.html')
@@ -37,19 +36,7 @@ def login(request):
     return render(request, "login.html")
 
 def home_c(request):
-    amount = 0
-    try:
-        accounts = tecban_requests.balance_accounts()
-    except e:
-        pass
-
-    for account in accounts:
-        amount += float(account["amount"])
-    
-    if(amount == 0):
-        amount = 23456.78 
-
-    return render(request, "home-c.html", {"amount": amount})
+    return render(request, "home-c.html")
 
 def despesas(request):
     return render(request, "despesas.html")
