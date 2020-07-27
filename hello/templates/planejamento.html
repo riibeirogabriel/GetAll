@@ -40,16 +40,17 @@
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="{% url 'home-c' %}">Alex Smith</a></h1>
+        <img src="../static/img/perfil.png" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-profile"><a href="{% url 'home-c' %}"></a>Amanda Wolf</a></h1>
       </div>
 
       <nav class="nav-menu">
         <ul>
-          <li><a href="{% url 'home-c' %}"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="{% url 'despesas' %}"><i class="bx bx-despesas"></i> <span>Despesas</span></a></li>
-          <li><a href="{% url 'metas' %}"><i class="bx bx-metas"></i> <span>Metas</span></a></li>
-          <li><a href="{% url 'faq' %}"><i class="bx bx-faq"></i> <span>Dúvidas frequentes</span></a></li>
+          <li><a href="{% url 'home-c' %}"> <span>Home</span></a></li>
+          <li><a href="{% url 'despesas' %}"> <span>Despesas</span></a></li>
+          <li><a href="{% url 'metas' %}"> <span>Metas</span></a></li>
+          <li><a href="{% url 'faq' %}"> <span>Dúvidas frequentes</span></a></li>
+
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -59,20 +60,39 @@
   <main id="main">
   <section id="planejamento" class="planejamento">
       <div class="container">
-
-        <div class="row" id="section-title">
-          <div class="col-xs-4" id="icon-back" > <a href="{% url 'home-c' %}">icon</a></div>
-          <div class="col-xs-4" id="title" >Qual é o seu principal objetivo financeiro?</div>
+        <div class="row" id="plan">
+          <div id="arrow-right-icon">
+            <a href="{% url 'home-c' %}"><img src="../static/img/arrow-left-w.png " alt="arrow-left"></a>
+          </div>
+          <div id="title">
+              <h3>Qual é o seu principal <br> objetivo financeiro?</h3>
+          </div>
         </div>
-        <div>
+
+        <div id="getall">
             <p>O que te trouxe ao GetALL? Fica muito mais fácil gerenciar suas finanças com 
                 um objetivo em mente!</p>
         </div>
-        <div id="icon-planejamento">
-
+        <div class="nova" ">
+          <div id="nova" >
+          </div>  
+          <div id="icon-plan" >
+            <img src="../static/img/plan1.png" alt="plan">
+          </div>
         </div>
-        <div id="icon-back">
-            <a href="{% url 'home-c' %}">icon</a>
+        <div class="nova" ">
+          <div id="nova" >
+          </div>  
+          <div id="icon-plan" >
+            <img src="../static/img/plan2.png" alt="plan">
+          </div>
+        </div>
+        <div class="nova" ">
+          <div id="nova" >
+          </div>  
+          <div id="icon-plan" >
+            <img src="../static/img/plan3.png" alt="plan">
+          </div>
         </div>
 
         

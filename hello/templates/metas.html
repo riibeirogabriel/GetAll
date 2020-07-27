@@ -59,54 +59,42 @@
   <main id="main">
   <section id="metas" class="metas">
       <div class="container">
-
-        <div class="row" id="section-title">
-          <div class="col-xs-4" id="icon-back" > <a href="{% url 'home-c' %}">icon</a></div>
-          <div class="col-xs-4" id="title" >Poupança</div>
-        </div>
-        <div id="cashinvest-button">
-            <a href="{% url 'cash-invest' %}"><button >Cash Invest</button></a>
-        </div>
-        <div class="row" id="meta1">
-            <div class="col-xs-4" id="meta1title">
-                <h3>INTERCÂMBIO EM PARIS</h3>
-            </div>
-            <div class="col-xs-4" id="meta1-icon-card">
-                
-            </div>
-            <div class="col-xs-4" id="meta1icon-settings">
-                
-            </div>
-            <div id="meta1-data">
-                <p>iniciada em: 31/05/2020</p>
-            </div>
-            <div id="valor">
-
-            </div>
-        </div>
-        <div id="meta2">
-            <div class="col-xs-4" id="meta2title">
-                <h3>INTERCÂMBIO EM PARIS</h3>
-            </div>
-            <div class="col-xs-4" id="meta2-icon-card">
-                
-            </div>
-            <div class="col-xs-4" id="meta2icon-settings">
-                
-            </div>
-            <div id="meta2-data">
-                <p>iniciada em: 31/05/2020</p>
-            </div>
-            <div id="valor">
-        </div>
-        <div id="new-meta">
-
-        </div>
-        <div id="icon-back">
-            <a href="{% url 'home-c' %}">icon</a>
+        <div class="row" id="plan">
+          <div id="arrow-right-icon">
+            <a href="{% url 'home-c' %}"><img src="../static/img/arrow-left-w.png " alt="arrow-left"></a>
+          </div>
+          <div id="title">
+              <h3>Metas</h3>
+          </div>
         </div>
 
+        <div id="plan-button">
+          <a href="{% url 'cash-invest' %}"><button >Cash Invest</button></a>
+      </div>
+      <div>
+        <div class="section-consumo" ">
+          <div id="planejamento" >
+          </div>  
+          <div id="icon-plan" >
+            <img src="../static/img/paris.png" alt="plan">
+          </div>
+        </div>
+        <div class="section-consumo" ">
+          <div id="planejamento" >
+          </div>  
+          <div id="icon-plan" >
+            <img src="../static/img/ap.png" alt="plan">
+          </div>
+        </div>
+        <div class="nova" ">
+          <div id="nova" >
+          </div>  
+          <div id="icon-plan" >
+            <img src="../static/img/metanova.png" alt="plan">
+          </div>
+        </div>
         
+      </div>
       </div>
     </section><!-- End About Section -->
 
